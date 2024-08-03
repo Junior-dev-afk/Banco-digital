@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/home/home.css">
+    <title>Bank</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="container-app">
+            <div class="topo">
+                <div class="topopc">
+                    <button class="foto margin"><img src="../../static/icons/perfil.png" alt="" class="icone"></button>
+                    <div class="opcoes">
+                        <button onclick="global.mostrarSaldo(this)" id="olho" class="margin icon olho-aberto"><img id="img-olho"  src="../../static/icons/olho-fechado.png" alt="" class="icone"></button>
+                        <button class="margin icon"><img src="../../static/icons/interrogacao.png" alt="" class="icone"></button>
+                        <button class="margin icon"><img src="../../static/icons/mensagem.png" alt="" class="icone"></button>
+                    </div>
+                </div>
+                <div class="baixopc">
+                    <div class="nome">
+                        Olá, 
+                    </div>
+                </div>
+            </div>
+            <div class="saldo">
+                <label id="saldo" style="margin-left: 15px; font-size: 25px;" for="">* * * *</label>
+            </div>
+            <div class="transasoes">
+                <div id="pix" style=" align-items: center; display: flex;flex-direction: column;justify-content: center;" class="cont">
+                    <button onclick="envPix()" class="icon-trans"><img style="width: 30px; height: 30px;" src="../../static/icons/pix.png" alt="" class="icone"></button>
+                    <label style="margin-left: 20px;" for="">Pix</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../static/js/module/global/global.js"></script>
+    <script src="../../static/js/home/home.js"></script>
+</body>
+</html>
